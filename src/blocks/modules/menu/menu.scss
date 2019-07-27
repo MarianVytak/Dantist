@@ -8,6 +8,7 @@
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
   border-radius: 0 0 75px;
   background-color: $white;
+  z-index: 3000;
 }
 
 .menu__logo {
@@ -23,6 +24,7 @@
     }
   }
   .accordion__link {
+    width: 230px;
     margin: 0 40px 0 80px;
     font-family: 'Montserrat-Bold', sans-serif;
     font-size: 16px;

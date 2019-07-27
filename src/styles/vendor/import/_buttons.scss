@@ -1,0 +1,24 @@
+.btn-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 268px;
+  height: 55px;
+  border-radius: 0 0 15px 15px;
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-size: 18px;
+  color: $white;
+  transition: .3s;
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.btn-red {
+  box-shadow: 0 3px 0 #d83636;
+  background-color: $red;
+  &:hover {
+    background-color: $h-red;
+  }
+}

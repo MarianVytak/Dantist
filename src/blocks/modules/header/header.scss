@@ -1,0 +1,57 @@
+.header {
+  padding-left: 375px;
+  background-color: $white;
+}
+
+.header__box {
+  display: flex;
+  align-items: flex-start;
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.header__navigation_item {
+  margin-right: 35px;
+}
+
+.header__navigation_item_link {
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-size: 16px;
+  color: $blue;
+  transition: .3s;
+  &:hover {
+    color: $h-blue;
+  }
+}
+
+.header__number {
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-size: 24px;
+  color: $black;
+}
+
+.header__number_badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 27px;
+  margin-right: 8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: $red;
+  font-size: 14px;
+  color: $white;
+}
+
+.header__address {
+  margin-right: 45px;
+}

@@ -1,0 +1,23 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 25px 0;
+}
+
+.breadcrumbs__item {
+  margin-right: 45px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.breadcrumbs__item_link {
+  color: $grey;
+  &:hover {
+    color: $blue;
+  }
+  &.active {
+    color: $blue;
+  }
+}

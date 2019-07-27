@@ -1,0 +1,54 @@
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  min-height: 860px;
+  padding: 40px 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+  border-radius: 0 0 75px;
+  background-color: $white;
+}
+
+.menu__logo {
+  padding: 0 40px 0 80px;
+}
+
+.menu__accordion {
+  margin-top: 60px;
+  .card {
+    margin-bottom: 35px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .accordion__link {
+    margin: 0 40px 0 80px;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 16px;
+    color: $blue;
+
+    &.collapsed {
+      color: $black;
+    }
+  }
+}
+
+.menu__accordion_list {
+  padding-top: 20px;
+}
+
+.menu__accordion_list_item_link {
+  display: block;
+  padding: 6px 40px 6px 120px;
+  color: $black;
+  &:hover {
+    background-color: #f2f7ff;
+    color: $blue;
+  }
+  &.active {
+    background-color: #f2f7ff;
+    font-family: 'Montserrat-Bold', sans-serif;
+    color: $blue;
+  }
+}

@@ -18,6 +18,7 @@
     color: $blue;
   }
   &.active {
+    border-bottom: 1px dashed $blue;
     color: $blue;
   }
 }

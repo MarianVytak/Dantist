@@ -4,14 +4,20 @@
 
 .cards__title {
   position: relative;
-  margin-bottom: 40px;
+  z-index: 2;
+}
+
+.cards__desc {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 18px;
   z-index: 2;
 }
 
 .cards__item {
   position: relative;
-  height: 180px;
-  padding: 20px;
+  min-height: 180px;
+  padding: 0 20px 15px;
   background-color: $white;
   z-index: 2;
 }
@@ -25,6 +31,20 @@
   border-radius: 0 0 15px 15px;
 }
 
+.cards__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+}
+
+.cards__price {
+  margin-top: 5px;
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-size: 18px;
+  color: $blue;
+}
+
 
 
 // Cards 1
@@ -36,4 +56,11 @@
   position: absolute;
   top: 30px;
   left: 35px;
+}
+
+
+
+// Cards 2
+.cards-2 {
+  text-align: center;
 }

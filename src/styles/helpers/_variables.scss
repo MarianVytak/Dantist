@@ -6,3 +6,13 @@ $grey: #8e8e8e;
 
 $h-red: darken($red, 10);
 $h-blue: darken($blue, 10);
+
+.color-red {
+  color: $red;
+}
+.color-blue {
+  color: $blue;
+}
+.color-white {
+  color: $white;
+}

@@ -1,0 +1,39 @@
+.cards {
+  padding: 45px 0;
+}
+
+.cards__title {
+  position: relative;
+  margin-bottom: 40px;
+  z-index: 2;
+}
+
+.cards__item {
+  position: relative;
+  height: 180px;
+  padding: 20px;
+  background-color: $white;
+  z-index: 2;
+}
+
+.cards__top {
+  border-radius: 15px 15px 0 0;
+}
+
+.cards__bot {
+  margin-top: 30px;
+  border-radius: 0 0 15px 15px;
+}
+
+
+
+// Cards 1
+.cards-1 {
+  padding: 30px 30px 30px 85px;
+}
+
+.cards-1__quote {
+  position: absolute;
+  top: 30px;
+  left: 35px;
+}

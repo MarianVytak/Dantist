@@ -1,22 +1,42 @@
 body {
-    background-color: $white;
-    font-family: 'Montserrat-Regular', sans-serif;
-    font-size: 14px;
-    color: $black;
+  background-color: $white;
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-size: 14px;
+  color: $black;
 }
 
 h1, h2, h3, h4, h5, h6, ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-align: left;
+  &:focus {
+    outline: none;
+  }
 }
 
 a {
+  text-decoration: none;
+  &:hover {
     text-decoration: none;
-    &:hover {
-        text-decoration: none;
-    }
+  }
+}
+
+.container-small {
+  width: 100%;
+  max-width: 900px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }

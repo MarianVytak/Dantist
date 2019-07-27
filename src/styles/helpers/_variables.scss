@@ -7,12 +7,23 @@ $grey: #8e8e8e;
 $h-red: darken($red, 10);
 $h-blue: darken($blue, 10);
 
-.color-red {
-  color: $red;
+.color-red { color: $red; }
+.color-blue { color: $blue; }
+.color-white { color: $white; }
+
+.overflow-red {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($red,.8);
 }
-.color-blue {
-  color: $blue;
-}
-.color-white {
-  color: $white;
+.overflow-blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($blue,.8);
 }

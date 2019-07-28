@@ -4,8 +4,13 @@ input[type="email"] {
   height: 45px;
 }
 
-.form-label {
-  font-family: 'Montserrat-Bold', sans-serif;
+.form__block {
+  padding: 70px 0 60px;
+  box-shadow: $shadow;
+  border-radius: 0 0 15px 15px;
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-position: center right;
 }
 
 .form-control {

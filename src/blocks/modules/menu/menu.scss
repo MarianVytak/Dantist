@@ -29,9 +29,18 @@
     font-family: 'Montserrat-Bold', sans-serif;
     font-size: 16px;
     color: $blue;
-
     &.collapsed {
       color: $black;
+      .accordion__arrow {
+        border: 2px solid $black;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+      }
+    }
+    .accordion__arrow {
+      border: 2px solid $blue;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
     }
   }
 }

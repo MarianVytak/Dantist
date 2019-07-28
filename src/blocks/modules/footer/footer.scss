@@ -15,9 +15,23 @@
 }
 
 .footer__list_item_link {
+  white-space: nowrap;
+  transition: .3s;
   &:hover {
     color: $white;
+    border-bottom: 1px dashed $white;
   }
+}
+
+.footer__list_item_info {
+  position: relative;
+  padding-left: 40px;
+}
+
+.footer__list_item_info_icon {
+  position: absolute;
+  top: 2px;
+  left: 0;
 }
 
 .footer__bottom_list {
@@ -43,4 +57,22 @@
 
 .footer__bottom_list_item_copy {
   color: #b1b1b1;
+}
+
+
+
+// Footer Accordion
+.footer__accordion {
+  .accordion__link {
+    padding-right: 35px;
+  }
+}
+.footer__accordion_list {
+  padding: 10px 0 10px 25px;
+}
+.footer__accordion_list_item {
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

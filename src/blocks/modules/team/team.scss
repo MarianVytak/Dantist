@@ -4,6 +4,17 @@
 }
 
 
+// Team Slider
+.team__slider {
+  .slick-list {
+    margin: -25px;
+  }
+  .slick-slide {
+    padding: 25px;
+  }
+}
+
+
 // Team Slider Avatar
 .team__slider_img {
   box-shadow: $shadow;
@@ -103,6 +114,14 @@
   -moz-border-radius: 15px;
   border-radius: 15px;
   overflow: hidden;
+}
+.team__slider_reviews_carousel {
+  .slick-list {
+    margin: 0;
+  }
+  .slick-slide {
+    padding: 0;
+  }
 }
 .team__slider_reviews_head {
   display: flex;

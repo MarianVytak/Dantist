@@ -1,0 +1,130 @@
+.team {
+  padding: 50px 0;
+  background-color: $white;
+}
+
+
+// Team Slider Avatar
+.team__slider_img {
+  box-shadow: $shadow;
+  border-radius: 15px;
+  background-color: $white;
+  img {
+    width: 100%;
+    border-radius: 15px;
+  }
+}
+
+
+// Team Slider Appointment
+.team__slider_appointment {
+  position: relative;
+  height: 100%;
+  padding: 45px 30px 40px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: $shadow;
+  background-color: $white;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 30px;
+    background-color: $white;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: $shadow;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: $white;
+    border-radius: 0 0 60px 60px;
+    box-shadow: 0 0 15px 10px $white;
+  }
+  .form-btn {
+    justify-content: center;
+  }
+}
+.team__slider_appointment_title {
+  bottom: 20px;
+  text-align: center;
+}
+
+
+// Team Slider Info
+.team__slider_info {
+  height: 100%;
+  padding: 45px 60px;
+  box-shadow: $shadow;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.team__slider_info_name {
+  margin-bottom: 15px;
+}
+.team__slider_info_position {
+  color: $grey;
+}
+.team__slider_info_list {
+  margin-top: 30px;
+}
+.team__slider_info_list_item {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.team__slider_info_list_item_check {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+// Team Slider Reviews
+.team__slider_reviews {
+  height: 100%;
+  box-shadow: $shadow;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.team__slider_reviews_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 30px;
+}
+.team__slider_reviews_head_title {
+  margin-bottom: 0;
+}
+.team__slider_reviews_body {
+  padding: 20px 30px 10px;
+}
+.team__slider_reviews_body_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+
+@media (min-width: 1200px) {
+  .team__slider {
+    margin-right: -145px;
+  }
+}

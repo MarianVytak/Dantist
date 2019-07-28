@@ -1,0 +1,89 @@
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  height: 45px;
+}
+
+.form-label {
+  font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.form-control {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-color: #f9f9f9;
+  border-color: #f9f9f9;
+  font-size: 14px;
+}
+
+.form-btn {
+  display: flex;
+}
+
+
+// Custom Control
+.custom-control-label {
+  font-size: 10px;
+}
+.custom-control {
+  padding-left: 35px;
+}
+.custom-control-label {
+  &:before {
+    top: 0.25em;
+    left: -35px;
+    width: 20px;
+    height: 20px;
+  }
+  &:after {
+    top: 0.25em;
+    left: -35px;
+    width: 20px;
+    height: 20px;
+  }
+}
+.custom-checkbox {
+  .custom-control-label {
+    &:before {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+    }
+  }
+}
+
+
+// Time
+.form-appointment {
+  display: flex;
+  align-items: center;
+}
+.form-appointment-label {
+  margin-bottom: 0.5rem;
+}
+.form-time {
+  margin-right: 10px;
+  input {
+    width: 55px;
+    text-align: center;
+  }
+  label {
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+}
+.form-date {
+  margin-left: 15px;
+  input {
+    text-align: center;
+  }
+  label {
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+}

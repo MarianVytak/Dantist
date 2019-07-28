@@ -1,7 +1,16 @@
 .title-block {
-  display: inline-block;
-  padding: 0.4em 0.8em;
+  display: inline-flex;
+  align-items: center;
+  height: 58px;
+  padding: 0 0.8em;
   border-radius: 0 0 15px 15px;
+}
+
+.link-block {
+  display: inline-flex;
+  align-items: center;
+  height: 58px;
+  margin-bottom: 30px;
 }
 
 .title-1 {
@@ -28,4 +37,6 @@
   font-size: 16px;
 }
 
-.date {}
+.link {
+  border-bottom: 1px dashed;
+}

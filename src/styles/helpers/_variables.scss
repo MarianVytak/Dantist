@@ -6,6 +6,7 @@ $grey: #8e8e8e;
 
 $h-red: darken($red, 10);
 $h-blue: darken($blue, 10);
+$h-grey: darken($grey, 10);
 
 $shadow: 0 5px 20px #dbdbdb;
 
@@ -13,6 +14,28 @@ $shadow: 0 5px 20px #dbdbdb;
 .color-blue { color: $blue; }
 .color-white { color: $white; }
 .color-grey { color: $grey; }
+
+.link-red {
+  border-color: $red;
+  transition: .3s;
+  &:hover, &:focus {
+    color: darken($red, 25);
+  }
+}
+.link-blue {
+  border-color: $blue;
+  transition: .3s;
+  &:hover, &:focus {
+    color: darken($blue, 25);
+  }
+}
+.link-grey {
+  border-color: $grey;
+  transition: .3s;
+  &:hover, &:focus {
+    color: darken($grey, 25);
+  }
+}
 
 .overflow-red {
   position: absolute;

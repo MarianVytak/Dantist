@@ -35,7 +35,7 @@
 .btn-red {
   box-shadow: 0 3px 0 #d83636;
   background-color: $red;
-  &:hover {
+  &:hover, &:focus {
     background-color: $h-red;
   }
 }
@@ -43,7 +43,7 @@
 .btn-blue {
   box-shadow: 0 3px 0 #074ab7;
   background-color: $blue;
-  &:hover {
+  &:hover, &:focus {
     background-color: $h-blue;
   }
 }

@@ -76,3 +76,14 @@
     margin-bottom: 0;
   }
 }
+
+
+
+@media (max-width: 1400px) {
+  .footer {
+    display: none;
+  }
+  .footer-mobile {
+    display: block;
+  }
+}

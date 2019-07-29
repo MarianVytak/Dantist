@@ -1,59 +1,73 @@
 <header class="header">
+    <div class="container-fluid">
 
-    <div class="header__box">
-        <ul class="header__navigation">
-            <li class="header__navigation_item">
-                <a href="#" class="header__navigation_item_link">Услуги</a>
+        <div class="header__box">
+            
+            <div class="header__logo">
+                <img src="../../../img/icons/logo.jpg" alt="">
+            </div>
+
+            <ul class="header__navigation">
+                <li class="header__navigation_item">
+                    <a href="#" class="header__navigation_item_link">Услуги</a>
+                </li>
+                <li class="header__navigation_item">
+                    <a href="#" class="header__navigation_item_link">Врачи</a>
+                </li>
+                <li class="header__navigation_item">
+                    <a href="#" class="header__navigation_item_link">Цены</a>
+                </li>
+                <li class="header__navigation_item">
+                    <a href="#" class="header__navigation_item_link">О Клинике</a>
+                </li>
+                <li class="header__navigation_item">
+                    <a href="#" class="header__navigation_item_link">Контакты</a>
+                </li>
+                <li class="header__navigation_item">
+                    <a href="#" class="header__navigation_item_link">Вопрос-ответ</a>
+                </li>
+                <li class="header__navigation_item">
+                    <div class="header__number">
+                        <span class="header__number_badge">8332</span>
+                        711-404
+                    </div>
+                </li>
+            </ul>
+            <!-- /.header__navigation -->
+
+            <ul class="header__address">
+                <li class="header__address_text">ул. М. Конева, 7, корпус 5</li>
+                <li class="header__address_text">пн-пт 8.00 - 20.00 | сб 9.00 - 14.00</li>
+            </ul>
+            <!-- /.header__address -->
+
+            <div class="box">
+                <a href="#" class="header__btn btn-1 btn-red">Записаться <span>&nbsp; на прием</span></a>
+                @@include("../hamburger/hamburger.html")
+            </div>
+
+        </div>
+        <!-- /.header__box -->
+
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__item_link active">2 шага к здоровым зубам</a>
             </li>
-            <li class="header__navigation_item">
-                <a href="#" class="header__navigation_item_link">Врачи</a>
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__item_link">Наша команда</a>
             </li>
-            <li class="header__navigation_item">
-                <a href="#" class="header__navigation_item_link">Цены</a>
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__item_link">Сколько стоит</a>
             </li>
-            <li class="header__navigation_item">
-                <a href="#" class="header__navigation_item_link">О Клинике</a>
-            </li>
-            <li class="header__navigation_item">
-                <a href="#" class="header__navigation_item_link">Контакты</a>
-            </li>
-            <li class="header__navigation_item">
-                <a href="#" class="header__navigation_item_link">Вопрос-ответ</a>
-            </li>
-            <li class="header__navigation_item">
-                <div class="header__number">
-                    <span class="header__number_badge">8332</span>
-                    711-404
-                </div>
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__item_link">Лечить сейчас, платить завтра</a>
             </li>
         </ul>
-        <!-- /.header__navigation -->
+        <!-- /.breadcrumbs -->
 
-        <ul class="header__address">
-            <li class="header__address_text">ул. М. Конева, 7, корпус 5</li>
-            <li class="header__address_text">пн-пт 8.00 - 20.00 | сб 9.00 - 14.00</li>
-        </ul>
-        <!-- /.header__address -->
+        @@include("../menu-mobile/menu-mobile.html")
 
-        <a href="#" class="header__btn btn-1 btn-red">Записаться на прием</a>
     </div>
-    <!-- /.header__box -->
-
-    <ul class="breadcrumbs">
-        <li class="breadcrumbs__item">
-            <a href="#" class="breadcrumbs__item_link active">2 шага к здоровым зубам</a>
-        </li>
-        <li class="breadcrumbs__item">
-            <a href="#" class="breadcrumbs__item_link">Наша команда</a>
-        </li>
-        <li class="breadcrumbs__item">
-            <a href="#" class="breadcrumbs__item_link">Сколько стоит</a>
-        </li>
-        <li class="breadcrumbs__item">
-            <a href="#" class="breadcrumbs__item_link">Лечить сейчас, платить завтра</a>
-        </li>
-    </ul>
-    <!-- /.breadcrumbs -->
-
+    <!-- /.container-fluid -->
 </header>
 <!-- /.header -->

@@ -64,3 +64,21 @@
     color: $blue;
   }
 }
+
+
+
+@media (max-width: 1600px) {
+  .menu {
+    min-height: 727px;
+  }
+}
+@media (max-width: 1350px) {
+  .menu {
+    min-height: 711px;
+  }
+}
+@media (max-width: 1023.98px) {
+  .menu {
+    display: none;
+  }
+}

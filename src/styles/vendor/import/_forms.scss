@@ -92,3 +92,24 @@ input[type="email"] {
     text-align: center;
   }
 }
+
+
+
+@include media-breakpoint-down(lg) {
+  .form__block {
+    background-image: none !important;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .form__block {
+    padding: 0;
+    box-shadow: none;
+    .container-small {
+      padding: 0;
+    }
+    .title-1 {
+      text-align: center;
+    }
+  }
+}

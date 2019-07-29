@@ -4,3 +4,12 @@
     margin-top: 45px;
   }
 }
+
+@include media-breakpoint-down(sm) {
+  .home-4 {
+    padding: 0;
+    .title-5 {
+      margin-top: 20px;
+    }
+  }
+}

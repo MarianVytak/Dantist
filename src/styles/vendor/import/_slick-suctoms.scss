@@ -13,19 +13,18 @@
   align-items: center;
   z-index: 2000;
   li {
-    margin-right: 0.5em;
+    margin-right: 12px;
     &:last-child {
       margin-right: 0;
     }
     button {
       display: block;
-      width: 5px;
-      height: 5px;
+      width: 9px;
+      height: 9px;
       padding: 0;
-      border: 6px solid rgba(255,255,255,1);
-      box-sizing: content-box;
+      border: 1px solid $white;
       border-radius: 50%;
-      background-color: $black;
+      background-color: transparent;
       outline: none;
       font-size: 0;
       cursor: pointer;
@@ -33,9 +32,6 @@
   }
   .slick-active {
     button {
-      width: 13px;
-      height: 13px;
-      border: 2px solid $blue;
       background-color: $white;
     }
   }

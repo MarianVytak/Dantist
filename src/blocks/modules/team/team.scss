@@ -1,6 +1,16 @@
 .team {
   padding: 50px 0;
   background-color: $white;
+  overflow: hidden;
+}
+
+.team__all {
+  display: none;
+  justify-content: center;
+  margin-top: 35px;
+  .link {
+    font-family: 'Montserrat-Bold', sans-serif;
+  }
 }
 
 
@@ -9,6 +19,7 @@
   .slick-list {
     margin: -25px;
   }
+
   .slick-slide {
     padding: 25px;
   }
@@ -20,6 +31,7 @@
   box-shadow: $shadow;
   border-radius: 15px;
   background-color: $white;
+
   img {
     width: 100%;
     border-radius: 15px;
@@ -35,6 +47,7 @@
   border-radius: 0 0 15px 15px;
   box-shadow: $shadow;
   background-color: $white;
+
   &:before {
     content: '';
     position: absolute;
@@ -48,6 +61,7 @@
     border-bottom-right-radius: 60px;
     box-shadow: $shadow;
   }
+
   &:after {
     content: '';
     position: absolute;
@@ -60,13 +74,16 @@
     border-radius: 0 0 60px 60px;
     box-shadow: 0 0 15px 10px $white;
   }
+
   .form-label {
     font-family: 'Montserrat-Bold', sans-serif;
   }
+
   .form-btn {
     justify-content: center;
   }
 }
+
 .team__slider_appointment_title {
   bottom: 20px;
   text-align: center;
@@ -82,23 +99,29 @@
   -moz-border-radius: 15px;
   border-radius: 15px;
 }
+
 .team__slider_info_name {
   margin-bottom: 15px;
 }
+
 .team__slider_info_position {
   color: $grey;
 }
+
 .team__slider_info_list {
   margin-top: 30px;
 }
+
 .team__slider_info_list_item {
   position: relative;
   margin-bottom: 20px;
   padding-left: 50px;
+
   &:last-child {
     margin-bottom: 0;
   }
 }
+
 .team__slider_info_list_item_check {
   position: absolute;
   top: 0;
@@ -115,14 +138,17 @@
   border-radius: 15px;
   overflow: hidden;
 }
+
 .team__slider_reviews_carousel {
   .slick-list {
     margin: 0;
   }
+
   .slick-slide {
     padding: 0;
   }
 }
+
 .team__slider_reviews_head {
   display: flex;
   align-items: center;
@@ -130,12 +156,15 @@
   height: 60px;
   padding: 0 30px;
 }
+
 .team__slider_reviews_head_title {
   margin-bottom: 0;
 }
+
 .team__slider_reviews_body {
   padding: 20px 30px 10px;
 }
+
 .team__slider_reviews_body_info {
   display: flex;
   align-items: center;
@@ -144,9 +173,97 @@
 }
 
 
-
 @media (min-width: 1350px) {
   .team__slider {
     margin-right: -145px;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .team__slider {
+    .slick-prev {
+      left: -10px;
+    }
+    .slick-next {
+      right: -10px;
+    }
+  }
+  .team__slider_reviews_head_title {
+    margin-bottom: 0;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .team__all {
+    display: flex;
+  }
+  .team__slider {
+    .slick-arrow {
+      top: 25%;
+    }
+    .slick-prev {
+      left: 50px;
+    }
+    .slick-next {
+      right: 50px;
+    }
+  }
+  .team__slider_img {
+    position: relative;
+    z-index: 1;
+  }
+  .team__slider_reviews_head {
+    padding: 0 20px;
+  }
+  .team__slider_reviews_body {
+    padding: 20px 20px 10px;
+  }
+  .team__slider_info {
+    padding: 20px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .team {
+    .container-small {
+      padding: 0;
+    }
+  }
+  .team__slider {
+    .slick-arrow {
+      top: -28px;
+      width: 10px;
+      height: 10px;
+      border: 2px solid $white;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+    }
+    .slick-prev {
+      left: 15px;
+      transform: rotate(-135deg);
+      background-image: none;
+    }
+    .slick-next {
+      right: 15px;
+      transform: rotate(45deg);
+      background-image: none;
+    }
+  }
+  .team__slider_img {
+    padding: 0 15px;
+    box-shadow: none;
+  }
+  .team__slider_info {
+    padding: 0 15px 15px;
+    box-shadow: none;
+  }
+  .team__slider_reviews {
+    box-shadow: none;
+  }
+  .team__slider_appointment {
+    padding: 45px 15px 40px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
   }
 }

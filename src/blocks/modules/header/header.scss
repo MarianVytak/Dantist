@@ -105,14 +105,11 @@
   .header__btn {
     display: flex;
     width: 123px;
+    min-width: 123px;
     height: 40px;
     font-size: 12px;
     span {
       display: none;
     }
   }
-}
-
-.team {
-  display: none;
 }

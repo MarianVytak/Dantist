@@ -28,5 +28,23 @@ $('.team__slider').slick({
     fade: true,
     arrows: true,
     dots: false,
-    swipe: false
+    swipe: false,
+});
+
+$('.cards__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: false,
+    arrows: true,
+    dots: true,
+    responsive: [
+        {
+            breakpoint: 9999,
+            settings: "unslick"
+        },
+        {
+            breakpoint: 1024,
+            settings: "slick"
+        }
+    ]
 });

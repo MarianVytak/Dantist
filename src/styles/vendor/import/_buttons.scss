@@ -2,11 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 268px;
-  height: 55px;
+  width: 14vw;
+  height: 2.86vw;
   border-radius: 0 0 15px 15px;
   font-family: 'Montserrat-Bold', sans-serif;
-  font-size: 18px;
   color: $white;
   transition: .3s;
   &:hover {
@@ -75,8 +74,14 @@
   }
 }
 
+@include media-breakpoint-up(xl) {
+  .btn-1 {
+    font-size: 0.9375vw;
+  }
+}
+
 @include media-breakpoint-down(sm) {
-  .btn-1, .btn-2 {
+  .btn-2 {
     width: 100%;
   }
 }

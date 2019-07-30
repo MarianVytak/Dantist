@@ -4,7 +4,7 @@ import $ from 'jquery';
 
 // Hamburger
 const hamburger = $('.hamburger');
-const menu = $('.menu-mobile');
+const menu = $('.navigation');
 
 hamburger.on('click', function(e){
 

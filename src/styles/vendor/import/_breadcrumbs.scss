@@ -2,11 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 10px 0 25px;
+  height: 50px;
+  overflow-x: auto;
 }
 
 .breadcrumbs__item {
   margin-right: 45px;
+  white-space: nowrap;
   &:last-child {
     margin-right: 0;
   }
@@ -24,20 +26,14 @@
 }
 
 
-
-@include media-breakpoint-down(lg) {
+@include media-breakpoint-up(xl) {
   .breadcrumbs {
-    overflow-x: auto;
-  }
-  .breadcrumbs__item_link {
-    white-space: nowrap;
-  }
-}
-@media (max-width: 1023.98px) {
-  .breadcrumbs {
-    padding: 0 0 15px;
+    height: 2.6vw;
   }
   .breadcrumbs__item {
-    margin-right: 20px;
+    margin-right: 2.35vw;
+  }
+  .breadcrumbs__item_link {
+    font-size: 0.73vw;
   }
 }

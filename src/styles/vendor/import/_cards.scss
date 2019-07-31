@@ -101,3 +101,16 @@
     margin-top: 12px;
   }
 }
+
+@include media-breakpoint-down(md) {
+  .cards-1 {
+    padding: 20px 20px 20px 70px;
+  }
+  .cards-1__quote {
+    top: 20px;
+    left: 20px;
+  }
+  .cards-2 {
+    min-height: 200px;
+  }
+}

@@ -32,7 +32,7 @@ $('.team__slider').slick({
 });
 
 $('.cards__slider').slick({
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     fade: false,
     arrows: true,
@@ -43,8 +43,14 @@ $('.cards__slider').slick({
             settings: "unslick"
         },
         {
-            breakpoint: 1024,
-            settings: "slick"
+            breakpoint: 768,
+            settings: "slick",
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1
+            },
         }
     ]
 });

@@ -56,6 +56,7 @@ $('.works-slider').slick({
     arrows: true,
     dots: false,
     swipe: true,
+    centerMode: false,
 });
 
 

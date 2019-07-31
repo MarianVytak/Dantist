@@ -1,23 +1,21 @@
 <header class="header">
     <div class="container-fluid">
 
-        @@include("./header-box.html")
+        <div class="header__box">
 
-        <ul class="breadcrumbs">
-            <li class="breadcrumbs__item">
-                <a href="#" class="breadcrumbs__item_link active">2 шага к здоровым зубам</a>
-            </li>
-            <li class="breadcrumbs__item">
-                <a href="#" class="breadcrumbs__item_link">Наша команда</a>
-            </li>
-            <li class="breadcrumbs__item">
-                <a href="#" class="breadcrumbs__item_link">Сколько стоит</a>
-            </li>
-            <li class="breadcrumbs__item">
-                <a href="#" class="breadcrumbs__item_link">Лечить сейчас, платить завтра</a>
-            </li>
-        </ul>
-        <!-- /.breadcrumbs -->
+            <div class="header__logo">
+                <img src="../../../img/icons/logo.jpg" alt="">
+            </div>
+
+            @@include("../navigation/navigation.html")
+
+            <div class="box">
+                <a href="#" class="header__btn btn-1 btn-red">Записаться <span>&nbsp; на прием</span></a>
+                @@include("../hamburger/hamburger.html")
+            </div>
+
+        </div>
+        <!-- /.header__box -->
 
     </div>
     <!-- /.container-fluid -->

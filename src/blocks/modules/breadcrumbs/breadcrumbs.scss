@@ -1,4 +1,4 @@
-.breadcrumbs {
+.breadcrumbs__list {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -6,7 +6,7 @@
   overflow-x: auto;
 }
 
-.breadcrumbs__item {
+.breadcrumbs__list_item {
   margin-right: 45px;
   white-space: nowrap;
   &:last-child {
@@ -14,7 +14,7 @@
   }
 }
 
-.breadcrumbs__item_link {
+.breadcrumbs__list_item_link {
   color: $grey;
   &:hover {
     color: $blue;
@@ -27,13 +27,14 @@
 
 
 @include media-breakpoint-up(xl) {
-  .breadcrumbs {
+  .breadcrumbs__list {
     height: 2.6vw;
+    padding-left: 18.75vw;
   }
-  .breadcrumbs__item {
+  .breadcrumbs__list_item {
     margin-right: 2.35vw;
   }
-  .breadcrumbs__item_link {
+  .breadcrumbs__list_item_link {
     font-size: 0.73vw;
   }
 }

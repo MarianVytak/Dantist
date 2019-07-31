@@ -48,3 +48,17 @@ $('.cards__slider').slick({
         }
     ]
 });
+
+$('.works-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    fade: false,
+    arrows: true,
+    dots: false,
+    swipe: true,
+});
+
+
+$('.collapse__content').on('shown.bs.collapse', function () {
+    $('.works-slider').slick('reinit');
+});

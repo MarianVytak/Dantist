@@ -65,6 +65,23 @@ $('.works-slider').slick({
     centerMode: false,
 });
 
+$('.reviews__slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    fade: false,
+    arrows: true,
+    dots: false,
+    swipe: false,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+
 
 $('.collapse__content').on('shown.bs.collapse', function () {
     $('.works-slider').slick('reinit');

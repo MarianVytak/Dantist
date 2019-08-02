@@ -4,6 +4,10 @@ input[type="email"] {
   height: 45px;
 }
 
+textarea.form-control {
+  height: 115px;
+}
+
 .form__block {
   padding: 70px 0 60px;
   box-shadow: $shadow;

@@ -82,6 +82,27 @@ $('.reviews__slider').slick({
     ]
 });
 
+$('.news__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: false,
+    arrows: true,
+    dots: false,
+    swipe: true,
+});
+
+$('.licenses__slider').slick({
+    rows: 3,
+    slidesToShow: 6,
+    slidesToScroll: 6,
+    speed: 1200,
+    fade: false,
+    arrows: true,
+    dots: false,
+    swipe: true,
+    infinite: false
+});
+
 
 $('.collapse__content').on('shown.bs.collapse', function () {
     $('.works-slider').slick('reinit');

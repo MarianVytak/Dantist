@@ -1,1 +1,39 @@
-.news {}
+.news {
+  padding: 50px 0 170px;
+  background-color: $white;
+  overflow: hidden;
+}
+
+.news__slider {
+  .slick-list {
+    margin: -25px;
+  }
+  .slick-slide {
+    padding: 25px;
+  }
+}
+
+.news__slider_info {
+  height: 100%;
+  padding: 45px 30px;
+  border-radius: 0 0 0 15px;
+  box-shadow: $shadow;
+  background-color: $white;
+  .title-5 {
+    margin-bottom: 40px;
+  }
+}
+
+.news__slider {
+  img {
+    width: 100%;
+  }
+}
+
+.news__form {
+  margin-top: 50px;
+  padding: 40px 30px 50px;
+  background-image: url(../../../img/clinic/news/news-form.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}

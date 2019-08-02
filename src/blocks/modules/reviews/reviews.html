@@ -87,28 +87,37 @@
                 Оставить отзыв
             </div>
 
-            <form class="needs-validation" novalidate="">
+            <form>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col-12 mb-4">
                                 <label class="form-label" for="reviewsSliderName">Введите Ваше имя:</label>
-                                <input type="text" class="form-control" id="reviewsSliderName" placeholder="Василий Петров" required="" tabindex="0">
+                                <input type="text" class="form-control" id="reviewsSliderName"
+                                       placeholder="Василий Петров" required="" tabindex="0">
                             </div>
                             <div class="col-12 mb-4">
                                 <label class="form-label" for="reviewsSliderEmail">Email:</label>
-                                <input type="tel" class="form-control" id="reviewsSliderEmail" placeholder="123@mail.ru" required="" tabindex="0">
+                                <input type="email" class="form-control" id="reviewsSliderEmail"
+                                       placeholder="123@mail.ru" required="" tabindex="0">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 mb-4">
-                        <label class="form-label" for="reviewsSliderText">Текст отзыва:</label>
+                        <div class="label-box">
+                            <label class="form-label" for="reviewsSliderText">Текст отзыва:</label>
+                            <label class="form-file">
+                                <input type="file">
+                                <span class="link link-grey color-grey">Прикрепить файл</span>
+                            </label>
+                        </div>
                         <textarea class="form-control" id="reviewsSliderText"></textarea>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <div class="custom-control custom-checkbox mb-4">
-                                <input type="checkbox" class="custom-control-input" id="teamAppointmentAccept-1" required="" tabindex="0">
+                                <input type="checkbox" class="custom-control-input" id="teamAppointmentAccept-1"
+                                       required="" tabindex="0">
                                 <label class="custom-control-label" for="teamAppointmentAccept-1">
                                     Согласен на обработку персональных данных и с политикой конфиденциальности
                                 </label>

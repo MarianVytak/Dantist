@@ -4,8 +4,34 @@ input[type="email"] {
   height: 45px;
 }
 
+input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+}
+
 textarea.form-control {
   height: 115px;
+  resize: none;
+}
+
+.form-file {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 25px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='17' viewBox='0 0 15 17'%3E%3Cg%3E%3Cg%3E%3Cpath d='M10.285 5.206a.582.582 0 0 0 0-.811.582.582 0 0 0-.811 0L3.469 10.4a1.85 1.85 0 0 0 0 2.606 1.85 1.85 0 0 0 2.606 0l6.292-6.291a.896.896 0 0 0 .171-.115c.84-.84 3.074-3.074.926-5.222-.82-.82-1.804-1.136-2.845-.907-.85.182-1.727.726-2.606 1.604L1.197 8.891c-.812.812-1.241 1.938-1.193 3.17.047 1.174.534 2.32 1.346 3.131A4.563 4.563 0 0 0 4.452 16.5h.096c1.164 0 2.234-.44 3.026-1.232l6.721-6.72a.582.582 0 0 0 0-.812.582.582 0 0 0-.811 0l-6.721 6.721c-.592.592-1.404.907-2.292.897a3.392 3.392 0 0 1-2.31-.973C.872 13.09.806 10.906 2.008 9.703l6.817-6.817c.706-.706 1.413-1.155 2.033-1.288.659-.144 1.25.047 1.795.601.535.535.687 1.031.496 1.633-.133.43-.439.907-.954 1.48-.038.028-.086.057-.115.085l-6.807 6.807a.703.703 0 0 1-.983 0 .703.703 0 0 1 0-.983z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .form__block {
@@ -28,6 +54,12 @@ textarea.form-control {
 
 .form-btn {
   display: flex;
+}
+
+.label-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 

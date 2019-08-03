@@ -24,7 +24,11 @@
   }
 }
 
-.news__slider {
+.news__slider_img {
+  position: relative;
+  height: 100%;
+  border-radius: 0 0 15px 0;
+  overflow: hidden;
   img {
     width: 100%;
   }
@@ -36,4 +40,72 @@
   background-image: url(../../../img/clinic/news/news-form.png);
   background-position: bottom right;
   background-repeat: no-repeat;
+}
+
+
+@include media-breakpoint-down(lg) {
+  .news {
+    padding: 50px 0 80px;
+  }
+  .news__slider {
+    .slick-prev {
+      left: -10px;
+    }
+    .slick-next {
+      right: -10px;
+    }
+  }
+  .news__slider_img {
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .news {
+    padding: 50px 0;
+  }
+  .news__slider {
+    padding-bottom: 50px;
+    .slick-arrow {
+      top: auto;
+      bottom: 0;
+    }
+    .slick-prev {
+      left: 50%;
+      transform: translate(-125%, 0);
+    }
+    .slick-next {
+      right: 50%;
+      transform: translate(125%, 0);
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .news {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+  .news__slider_img {
+    position: relative;
+    height: auto;
+    border-radius: 15px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .news__slider_info {
+    padding: 0;
+    box-shadow: none;
+    .title-5 {
+      margin-bottom: 20px;
+    }
+  }
 }

@@ -66,3 +66,59 @@
     }
   }
 }
+
+@include media-breakpoint-down(lg) {
+  .reviews__slider {
+    .slick-prev {
+      left: -10px;
+    }
+    .slick-next {
+      right: -10px;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .reviews__slider {
+    padding-bottom: 50px;
+    .slick-arrow {
+      top: auto;
+      bottom: 0;
+    }
+    .slick-prev {
+      left: 50%;
+      transform: translate(-125%, 0);
+    }
+    .slick-next {
+      right: 50%;
+      transform: translate(125%, 0);
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .reviews {
+    padding-bottom: 40px;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .reviews {
+    padding-bottom: 30px;
+    background-color: $white;
+    .team__slider_appointment {
+      margin: 30px -15px 0;
+      padding: 25px 15px 40px;
+    }
+  }
+  .reviews__slider {
+    padding-bottom: 35px;
+  }
+  .reviews__slider_item_box {
+    padding: 0 0 50px;
+    box-shadow: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+}

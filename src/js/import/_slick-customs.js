@@ -56,13 +56,13 @@ $('.cards__slider').slick({
 });
 
 $('.works-slider').slick({
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     fade: false,
     arrows: true,
     dots: false,
     swipe: true,
-    centerMode: false,
+    infinite: false
 });
 
 $('.reviews__slider').slick({
@@ -100,7 +100,25 @@ $('.licenses__slider').slick({
     arrows: true,
     dots: false,
     swipe: true,
-    infinite: false
+    infinite: false,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                rows: 2,
+                slidesToShow: 3,
+                slidesToScroll: 3
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                rows: 2,
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        }
+    ]
 });
 
 

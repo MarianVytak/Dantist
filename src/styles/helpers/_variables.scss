@@ -3,6 +3,7 @@ $white: #ffffff;
 $blue: #346fcf;
 $red: #ff4e4d;
 $grey: #8e8e8e;
+$azure: #e8f1ff;
 
 $h-red: darken($red, 10);
 $h-blue: darken($blue, 10);
@@ -56,3 +57,4 @@ $shadow: 0 5px 20px #dbdbdb;
 
 .bg-blue { background-color: $blue; }
 .bg-red { background-color: $red; }
+.bg-azure { background-color: $azure; }

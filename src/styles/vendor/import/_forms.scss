@@ -35,12 +35,14 @@ textarea.form-control {
 }
 
 .form__block {
+  position: relative;
   padding: 70px 0 60px;
   box-shadow: $shadow;
   border-radius: 0 0 15px 15px;
   background-color: $white;
   background-repeat: no-repeat;
   background-position: center right;
+  z-index: 2;
 }
 
 .form-control {
@@ -60,6 +62,10 @@ textarea.form-control {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.form-label {
+  font-family: 'Montserrat-Bold', sans-serif;
 }
 
 

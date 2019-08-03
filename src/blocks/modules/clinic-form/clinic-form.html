@@ -1,0 +1,64 @@
+<div class="clinic-form">
+    <div class="overflow-blue"></div>
+    <div class="container">
+        <div class="form__block">
+            <div class="container-small">
+
+                <div class="title-1">Записаться на прием</div>
+
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4 mb-4">
+                            <label class="form-label" for="clinicFormName">Введите Ваше имя:</label>
+                            <input type="text" class="form-control" id="clinicFormName" placeholder="Василий Петров"
+                                   required="">
+                        </div>
+                        <div class="col-md-6 col-xl-4 mb-4">
+                            <label class="form-label" for="clinicFormPhone">Телефон:</label>
+                            <input type="tel" class="form-control" id="clinicFormPhone" placeholder="+7 (___) ___-____"
+                                   required="">
+                        </div>
+                    </div>
+                    <div class="form-label form-appointment-label">Удобное время посещения</div>
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4 mb-4">
+                            <div class="form-appointment">
+                                <div class="form-time">
+                                    <input type="text" class="form-control" id="clinicFormHours-1" placeholder="17"
+                                           tabindex="0">
+                                    <label class="form-label" for="clinicFormHours-1">часов</label>
+                                </div>
+                                <div class="form-time">
+                                    <input type="text" class="form-control" id="clinicFormMinutes-1"
+                                           placeholder="00" tabindex="0">
+                                    <label class="form-label" for="clinicFormMinutes-1">минут</label>
+                                </div>
+                                <div class="form-date">
+                                    <input type="text" class="form-control" id="clinicFormDate-1"
+                                           placeholder="21 мая" tabindex="0">
+                                    <label class="form-label" for="clinicFormDate-1">число</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4 mb-4">
+                            <div class="form-btn">
+                                <button class="btn-2 btn-red" type="submit">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="clinicFormAccept" required="">
+                        <label class="custom-control-label" for="clinicFormAccept">
+                            Согласен на обработку персональных данных и с политикой конфиденциальности
+                        </label>
+                    </div>
+                </form>
+
+            </div>
+            <!-- /.container-small -->
+        </div>
+        <!-- /.form__block -->
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.clinic-form -->

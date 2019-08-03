@@ -1,0 +1,18 @@
+.clinic-form {
+  position: relative;
+  padding: 75px 0 85px;
+  background-image: url(../../../img/clinic/clinic-form/clinic-form-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .form__block {
+    box-shadow: none;
+    background-image: url(../../../img/clinic/clinic-form/clinic-form-img.png);
+  }
+  .custom-control-label {
+    line-height: 2;
+    &:before {
+      top: 0;
+    }
+  }
+}

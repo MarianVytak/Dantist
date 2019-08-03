@@ -16,6 +16,7 @@
 
 .breadcrumbs__list_item_link {
   color: $grey;
+  white-space: nowrap;
   &:hover {
     color: $blue;
   }

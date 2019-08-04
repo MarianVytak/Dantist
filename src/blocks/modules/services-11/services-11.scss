@@ -13,3 +13,11 @@
 		background-repeat: no-repeat;
 	}
 }
+
+
+
+@include media-breakpoint-down(sm) {
+	.services-11 {
+		padding: 20px 0 50px;
+	}
+}

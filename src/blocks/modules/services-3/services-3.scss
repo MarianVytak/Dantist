@@ -13,3 +13,14 @@
 		background-repeat: no-repeat;
 	}
 }
+
+
+
+@include media-breakpoint-down(sm) {
+	.services-3 {
+		padding: 20px 0 50px;
+	}
+	.services-3__form {
+		margin-top: 40px;
+	}
+}

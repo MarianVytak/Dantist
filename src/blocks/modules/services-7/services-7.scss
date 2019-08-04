@@ -14,3 +14,15 @@
 		background-repeat: no-repeat;
 	}
 }
+
+
+
+@include media-breakpoint-down(sm) {
+	.services-7 {
+		padding: 0 0 20px;
+		background-color: $white;
+	}
+	.services-7__form {
+		margin-top: 40px;
+	}
+}

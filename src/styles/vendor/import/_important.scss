@@ -1,3 +1,9 @@
+.block-important {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .important {
 	align-items: center;
 	margin-bottom: 30px;
@@ -62,5 +68,21 @@
 		&:before {
 			border: 1px solid $red;
 		}
+	}
+}
+
+
+
+@include media-breakpoint-down(sm) {
+	.block-important {
+		display: block;
+		text-align: center;
+	}
+	.important {
+		display: inline-flex;
+	}
+	.important__icon {
+		margin-bottom: 0;
+		margin-left: 10px;
 	}
 }

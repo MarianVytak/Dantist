@@ -6,3 +6,11 @@
 .services-10__img {
 	text-align: center;
 }
+
+
+
+@include media-breakpoint-down(sm) {
+	.services-10 {
+		padding: 30px 0 20px;
+	}
+}

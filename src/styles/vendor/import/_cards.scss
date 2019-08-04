@@ -38,6 +38,12 @@
   height: 110px;
 }
 
+.cards__item_bg {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
 .cards__price {
   margin-top: 5px;
   font-family: 'Montserrat-Bold', sans-serif;

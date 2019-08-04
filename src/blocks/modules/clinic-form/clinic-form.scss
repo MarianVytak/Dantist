@@ -1,13 +1,13 @@
 .clinic-form {
   position: relative;
   padding: 75px 0 85px;
-  background-image: url(../../../img/clinic/clinic-form/clinic-form-bg.jpg);
+  background-image: url(../../../img/bg/bg-2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   .form__block {
     box-shadow: none;
-    background-image: url(../../../img/clinic/clinic-form/clinic-form-img.png);
+    background-image: url(../../../img/bg-form/form-bg-3.png);
   }
   .custom-control-label {
     line-height: 2;
@@ -53,4 +53,3 @@
     }
   }
 }
-@include media-breakpoint-down(xs) {}

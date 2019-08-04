@@ -1,0 +1,64 @@
+.counter {
+	position: relative;
+	.dpui-numberPicker-input {
+		width: 100%;
+		height: 36px;
+		border: 2px solid #dbdbdb;
+		-webkit-border-radius: 25px;
+		-moz-border-radius: 25px;
+		border-radius: 25px;
+		background-color: $white;
+		font-family: 'Montserrat-Bold', sans-serif;
+		font-size: 14px;
+		color: $black;
+		text-align: center;
+	}
+	.dpui-numberPicker-decrease,
+	.dpui-numberPicker-increase {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 36px;
+		height: 36px;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+		background-color: $red;
+		span {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 12px;
+			height: 2px;
+			background-color: $white;
+		}
+	}
+	.dpui-numberPicker-decrease {
+		left: 0;
+	}
+	.dpui-numberPicker-increase {
+		right: 0;
+		span {
+			&:first-child {
+				transform: translate(-50%,-50%) rotate(90deg);
+			}
+		}
+	}
+	&.dpui-numberPicker-min {
+		.dpui-numberPicker-decrease {
+			background-color: #ffd8d8;
+			span {
+				background-color: $red;
+			}
+		}
+	}
+	&.dpui-numberPicker-max {
+		.dpui-numberPicker-increase {
+			background-color: #ffd8d8;
+			span {
+				background-color: $red;
+			}
+		}
+	}
+}

@@ -16,8 +16,8 @@
 
 .guarantees__table_list {
   padding: 30px 0;
-  border-top: 1px solid #f9f9f9;
-  border-bottom: 1px solid #f9f9f9;
+  border-top: 1px solid $bg;
+  border-bottom: 1px solid $bg;
 }
 .guarantees__table_list_title {
   padding: 8px 0;
@@ -25,7 +25,7 @@
 .guarantees__table_list_item {
   padding: 8px 0;
   &:nth-child(2n) {
-    background-color: #f9f9f9;
+    background-color: $bg;
   }
 }
 

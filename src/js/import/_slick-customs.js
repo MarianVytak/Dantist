@@ -36,7 +36,7 @@ $('.cards__slider').slick({
     slidesToScroll: 1,
     fade: false,
     arrows: true,
-    dots: true,
+    dots: false,
     responsive: [
         {
             breakpoint: 9999,
@@ -49,7 +49,8 @@ $('.cards__slider').slick({
         {
             breakpoint: 576,
             settings: {
-                slidesToShow: 1
+                slidesToShow: 1,
+                dots: true
             },
         }
     ]

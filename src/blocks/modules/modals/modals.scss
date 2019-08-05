@@ -1,0 +1,41 @@
+.modal {
+	z-index: 8000;
+}
+
+.modal-backdrop {
+	z-index: 7000;
+}
+
+.modal-content {
+	padding-bottom: 20px;
+	border: none;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+
+
+@include media-breakpoint-down(md) {
+	.modal {
+		.container-small {
+			padding: 0;
+		}
+		.title-block {
+			width: 100%;
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			border-radius: 0;
+		}
+		.btn-3 {
+			width: 100%;
+		}
+	}
+	.modal-content {
+		padding: 0;
+		overflow: hidden;
+	}
+	.modal-wrapper {
+		padding: 0 15px;
+	}
+}

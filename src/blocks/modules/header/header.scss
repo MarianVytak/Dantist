@@ -7,6 +7,10 @@
   box-shadow: $shadow;
   background-color: $white;
   z-index: 3000;
+  &.active {
+    height: 100%;
+    overflow: auto;
+  }
 }
 
 .header__box {

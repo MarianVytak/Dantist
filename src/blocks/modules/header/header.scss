@@ -1,6 +1,12 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding-left: 360px;
+  box-shadow: $shadow;
   background-color: $white;
+  z-index: 3000;
 }
 
 .header__box {

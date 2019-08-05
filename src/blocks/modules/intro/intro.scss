@@ -31,7 +31,7 @@
 
 
 
-@media (max-width: 1023.98px) {
+@include media-breakpoint-down(md) {
   .intro {
     padding: 0 0 20px;
     background-image: none;

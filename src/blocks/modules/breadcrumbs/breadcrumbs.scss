@@ -35,3 +35,9 @@
     font-size: 0.73vw;
   }
 }
+
+@include media-breakpoint-down(sm) {
+  .breadcrumbs__list_item {
+    margin-right: 25px;
+  }
+}

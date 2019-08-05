@@ -1,3 +1,9 @@
 .buffer {
 	padding-bottom: 6vw;
 }
+
+@include media-breakpoint-down(lg) {
+	.buffer {
+		padding-bottom: 110px;
+	}
+}

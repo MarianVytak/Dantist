@@ -2,9 +2,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 350px;
-  min-height: 860px;
-  padding: 40px 0;
+  //min-height: 860px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
   border-radius: 0 0 75px;
   background-color: $white;
@@ -68,7 +66,7 @@
 @include media-breakpoint-up(xl) {
   .menu {
     width: 18.2vw;
-    min-height: 45vw;
+    //min-height: 45vw;
     padding: 2vw 0;
   }
   .menu__logo{

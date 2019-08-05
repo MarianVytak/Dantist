@@ -17,10 +17,6 @@
 }
 
 @include media-breakpoint-down(sm) {
-  .guarantees__table {
-    margin-left: -15px;
-    margin-right: -15px;
-  }
   .guarantees__table_list {
     padding: 0;
   }

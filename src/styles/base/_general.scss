@@ -54,3 +54,30 @@ a {
   margin-right: auto;
   margin-left: auto;
 }
+
+.container, .container-fluid {
+  .container-small {
+    padding: 0;
+  }
+  .form__block {
+    .container-small {
+      padding: 0 15px;
+    }
+  }
+}
+
+.container-fluid {
+  .container {
+    padding: 0;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .container, .container-fluid {
+    .form__block {
+      .container-small {
+        padding: 0;
+      }
+    }
+  }
+}

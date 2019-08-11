@@ -7,7 +7,9 @@ const footerAccordionLink = $('.footer__accordion_link');
 
 footerAccordionLink.on('click', function (e) {
     e.preventDefault();
-    $(this).toggleClass('active');
-    let footerAccordionContentThis = $(this).attr('data-target');
-    $(footerAccordionContentThis).slideToggle();
+    if ($(window).width() < 1200) {
+        $(this).toggleClass('active');
+        let footerAccordionContentThis = $(this).attr('data-target');
+        $(footerAccordionContentThis).slideToggle();
+    }
 });
